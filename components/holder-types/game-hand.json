@@ -1,0 +1,14 @@
+{
+  "connection": "default",
+  "collectionName": "components_holder_types_game_hands",
+  "info": {
+    "name": "gameHand",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "game": {
+      "model": "game"
+    }
+  }
+}

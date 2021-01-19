@@ -1,0 +1,41 @@
+$z-index: 125;
+
+.playerPanelOuter {
+  width: 100%;
+  position: relative;
+  height: auto;
+  z-index: $z-index;
+  display: flex;
+  float: left;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.moveBtn{
+  position: absolute;
+  width: 3em;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-opposite);
+  z-index: 200;
+}
+
+.playerPanelInner {
+  z-index: 5;
+  position: relative;
+  height: auto;
+  z-index: $z-index;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  flex: 1;
+  justify-content: center;
+  overflow: visible;
+  padding-left: 3em;
+  padding-right: 3em;
+  //transition: transform 300ms, left 300ms;
+
+}

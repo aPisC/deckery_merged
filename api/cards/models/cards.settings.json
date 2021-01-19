@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "cards",
+  "info": {
+    "name": "Card"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "deck": {
+      "model": "deck"
+    },
+    "game": {
+      "model": "game",
+      "via": "cards"
+    },
+    "container": {
+      "model": "container",
+      "via": "cards"
+    },
+    "position": {
+      "type": "biginteger"
+    },
+    "background": {
+      "type": "json"
+    }
+  }
+}

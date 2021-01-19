@@ -1,0 +1,59 @@
+$z-index: 160;
+
+.modalOuter {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  z-index: $z-index;
+  background-color: var(--color-shadow);
+  
+}
+
+.modalInner{
+  margin: auto;
+  margin-top: 4em;
+  width: fit-content;
+  max-width: 90%;
+  min-width: 30vw;
+}
+
+.modalHeader {
+  display: grid;
+  font-size: large;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+  margin-bottom: 1rem;
+  grid-template-columns: 1fr 1.5em;
+}
+
+.modalInnerPanel {
+  padding: 16px;
+  background-color: var(--color-base);
+  color: var(--color-opposite);
+  border-radius: 8px;
+}
+
+.modalBody {}
+
+.modalButton {
+  background-color: var(--color-fore)!important;
+  color: var(--color-opposite)!important;
+  &:hover{
+    background-color: var(--color-hover)!important;
+  }
+}
+.modalButtonSecondary {
+  background-color: var(--color-back)!important;
+  color: var(--color-opposite)!important;
+  &:hover{
+    background-color: var(--color-hover)!important;
+  }
+}
+.modalButtonRow {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.5em;
+  margin-top: 1rem;
+  justify-content: space-between;
+}

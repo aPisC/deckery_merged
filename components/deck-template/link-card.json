@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "components_deck_template_link_cards",
+  "info": {
+    "name": "LinkCard",
+    "icon": "building"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "background": {
+      "type": "string"
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "count": {
+      "type": "integer",
+      "required": true,
+      "default": 1,
+      "min": 1
+    },
+    "border": {
+      "type": "string"
+    }
+  }
+}

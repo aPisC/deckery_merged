@@ -1,0 +1,131 @@
+@import '../../../../style/vars.scss';
+
+.handContainer, .pileContainer{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background: linear-gradient(to top, #888 , transparent);
+  background-position-y: bottom;
+  background-size: 100% 0;
+  transition: background-size 300ms;
+  background-repeat: no-repeat;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+
+  .cardArea{
+    min-width: 5em;
+    width: fit-content;
+    flex-basis: 100%;
+  }
+
+  .optionsBar {
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    padding: .5em;
+    &>*{
+      color: var(--color-fore);
+      cursor: pointer;
+      &:hover{
+        color: var(--color-forealt);
+      }
+    }
+  }
+
+  &.optionsRight .optionsBar{
+    grid-column: 3;
+  }
+
+  .containerName{
+    padding: .25em;
+    font-weight: 500;
+    grid-row: 1;
+    grid-column: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 1;
+  }
+
+  &.small{
+    .cardArea{
+      min-height: 3.5em;
+      &>* {
+        margin-bottom: -5.5em;
+      }
+    }
+  }
+
+  &.dropOver{
+    background-size: 100% 50%;
+  }
+}
+
+.handContainer {
+  .cardArea{
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    flex-wrap: nowrap;
+    min-height: 9em;
+    &>* {
+      margin-right: .25em;
+      margin-left: .25em;
+    }
+  }
+
+  &.stacked{
+    .cardArea{
+      padding-right: 5em;
+      &>* {
+        margin-right: -5em;
+      }
+    }
+  }
+}
+
+
+
+.pileContainer {
+  width: fit-content;
+
+  .containerName{
+    text-align: center;
+  }
+  .cardArea{
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 9em;
+    padding-left: .5em;
+    &>*{
+      overflow: visible;
+      margin-right: -6em;
+      z-index: 0;
+    }
+
+    &>*:nth-child(2){
+      z-index: 1;
+      transform: translate(-.15em, -.15em);
+    }
+    
+    &>*:nth-child(3){
+      z-index: 2;
+      transform: translate(-.3em, -.3em);
+    }
+
+    &>*:last-child{
+      margin-right: 0;
+    }
+
+
+
+    
+
+  }
+}
+

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_deck_template_render_cards",
+  "info": {
+    "name": "RenderCard",
+    "icon": "at"
+  },
+  "options": {},
+  "attributes": {
+    "background": {
+      "type": "json"
+    },
+    "name": {
+      "type": "string"
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "count": {
+      "type": "integer"
+    },
+    "border": {
+      "type": "string"
+    }
+  }
+}

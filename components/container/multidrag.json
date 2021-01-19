@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_container_multidrags",
+  "info": {
+    "name": "Multidrag",
+    "icon": "bolt"
+  },
+  "options": {},
+  "attributes": {
+    "allow": {
+      "type": "boolean"
+    }
+  }
+}

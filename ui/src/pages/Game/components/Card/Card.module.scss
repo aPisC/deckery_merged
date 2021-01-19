@@ -1,0 +1,80 @@
+.card{
+    display: inline-block;
+    
+    box-shadow: .2em .2em .5em .1em var(--color-shadow);
+    width: 6em;
+    border: 1px solid var(--color-opposite);
+    overflow: hidden;
+    border-radius: 6%;
+    background-color: var(--color-hover);
+    position: relative;
+    transition: transform 100ms ease-in-out;
+    &.dragged{
+        box-shadow: .5em .5em 2em .25em var(--color-shadow);
+    }
+    &.selected{
+        transform: scale(1.05);
+        box-shadow: 0px 0px .5em .25em var(--color-fore);
+        &::after{
+            background-color: var(--color-fore);
+        }
+    }
+    &.marked{
+        box-shadow: 0px 0px .5em .25em var(--color-fore);
+        &::after{
+            background-color: transparent;
+        }
+    }
+    &.noShadow{
+        box-shadow: none;
+    }
+    &::after{
+        opacity: .2;
+        width: 100%;
+        display: block;
+        content: '';
+        padding-top: 150%;
+        position: relative;
+        transition: background-color 100ms ease-in-out, box-shadow 100ms ease-in-out;
+    }
+    &>*{
+        position: absolute;
+        display: block;
+        //border-radius: 0.2em;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    &>img{
+        //object-fit: cover;
+        object-fit: fill;
+    }
+    &>.iconOverlay {
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: .5;
+            background-color: var(--color-base);
+            z-index: -1;
+            transition: none;
+        }
+        color: var(--color-fore) ;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5em;
+        font-weight: bold;
+        transition: opacity 300ms ease-in-out;
+        z-index: 1;
+    }
+    &:hover>.iconOverlay, &.dropTarget>.iconOverlay{
+        opacity: 1;
+    }
+}

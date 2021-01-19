@@ -1,0 +1,130 @@
+$z-index: 250;
+$border-color: var(--color-fore);
+$arrowSize: 1em;
+
+.popupLayer {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: $z-index;
+  overflow: hidden;
+  display: none;
+  &.show{
+    display: block;
+  }
+}
+
+.popupMenuContainer{
+  display: flex;
+  margin-left: -$arrowSize;
+  width: $arrowSize * 2; 
+  flex-direction: column;
+  overflow: visible;
+  &.isUp{
+    transform: translate(0, -100%);
+  }
+
+}
+
+.popupMenu {
+  box-shadow: 2px 5px 10px 0px var(--color-shadow);
+  background-color: var(--color-base);
+  border: .2em solid $border-color;
+  color: var(--color-forealt2);
+  padding-top: $arrowSize / 1.5;
+  border-radius: .5em;
+  min-width: 4em;
+  max-width: 45vw;
+  top: 50%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: 45vh;
+  overflow: auto;
+  &.isRight{
+    right: unset;
+    left: 0;
+  }
+  &.isUp{
+    top: unset;
+    bottom: 50%;
+    padding-top: 0;
+    padding-bottom: $arrowSize / 1.5;
+
+  }
+}
+
+.popupMenuArrow{
+  text-align: center;
+  width: 100%;
+  height: 1.4 * $arrowSize;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  &:before{
+    content: '';
+    display: block;
+    border: .2em solid $border-color;
+    background-color: var(--color-base);
+    transform: rotate(45deg) ;
+    border-radius: 20%;
+    border-bottom-color: var(--color-base);
+    border-right-color: var(--color-base);
+    width: $arrowSize;
+    height: $arrowSize;
+    margin-bottom: $arrowSize / 11;
+  }
+  &.isUp:before{
+    transform: rotate(-135deg) ;
+    margin-bottom: $arrowSize / 3;
+  }
+}
+.popupAnchor{
+  display: block;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+
+.popupMenuItem {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1em 1fr 1em;
+  gap: 1em;
+  flex: 1;
+  padding: .5em;
+  position: relative;
+  &:hover, &.hover{
+    background-color: var(--color-hover);
+  }
+  &>.popupAnchor{
+    right:$arrowSize;
+    left: unset;
+  }
+  &.text{
+    background-color: unset;
+    grid-template-columns: auto;
+    cursor: unset;
+  }
+}
+.popupMenuInner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: auto;
+  min-width: 100%;
+  min-height: 100%;
+  white-space: nowrap;
+  &>hr{
+    width: 100%;
+    border-color: var(--color-shadow);
+    margin: .25em 0;
+  }
+}

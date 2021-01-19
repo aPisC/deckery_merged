@@ -1,0 +1,30 @@
+@import '../../style/vars.scss';
+.fabutton{
+    width: 1.5em;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    &::before{
+        width: 100%;
+        display: block;
+        content: '';
+        padding-top: 100%;
+        position: relative;
+    }
+    &>*{
+        position: absolute;
+        font-size: 0.8em;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &>*>*{
+        width: 1em!important;
+    }
+    &.active{
+        color: $color-active;
+    }
+    &:hover{
+        background-color: var(--color-hover);
+    }
+}

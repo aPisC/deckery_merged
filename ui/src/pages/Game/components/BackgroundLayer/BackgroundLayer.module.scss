@@ -1,0 +1,21 @@
+$z-index: -1;
+
+.background {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: var(--color-base);
+  display: flex;
+  z-index: $z-index;
+}
+.backgroundCenter {
+  width: 70vmin;
+  height: 70vmin;
+  margin: auto;
+  background-color: var(--color-back);
+  background-size: 71vmin;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,153 @@
+$z-index: 150;
+
+.side {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: $z-index;
+  font-size: 1em;
+
+  @media (min-height: 400px) {
+    font-size: 1.2em;
+  }
+  @media (min-height: 640px) {
+    font-size: 1.4em;
+  }
+  
+  @media (min-height: 1000px) {
+    font-size: 1.6em;
+  }
+}
+
+.bar {
+  display: flex;
+  height: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  flex-direction: column;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  &::-webkit-scrollbar { 
+      display: none;  /* Safari and Chrome */
+  }
+
+  
+  mask-image: linear-gradient(to top, transparent, black 8px, black calc(100% - 8px), transparent);
+
+  .group {
+    width: 100%;
+    height: auto;
+    font-size: 2em;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color:var( --color-fore);
+    color:var( --color-base);
+    overflow: visible;
+
+    &:empty {
+      margin: 0;
+    }
+    &.bottom {
+      margin-top: auto;
+    }
+    &.bottom ~ .bottom {
+      margin-top: 6px;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    & > *.active {
+      color:var( --color-base) !important;
+    }
+    & > *:hover {
+      color:var( --color-hover);
+      background-color: unset;
+    }
+  }
+}
+
+.panel {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  left: 0;
+  padding: inherit;
+  padding-right: 2.5em;
+  width: 100vw;
+  max-width: 30em;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1;
+
+  .panelHeader {
+    height: 2em;
+    position: relative;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 4px;
+    padding-left: 8px;
+    margin-right: -1.66666em;
+    color:var( --color-base);
+    background-color:var( --color-fore);
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    overflow: hidden;
+  }
+
+  .panelLabel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.3333em;
+    background-color:var( --color-fore);
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    margin-left: 4px;
+
+    & > *:hover {
+      color:var( --color-hover);
+      background-color: unset;
+    }
+  }
+
+  .panelBody {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    background-color:var( --color-base);
+    border-bottom-right-radius: 16px;
+    overflow: auto;
+    &::-webkit-scrollbar-track {
+      margin-bottom: 10px;
+      margin-right: 10px;
+    }
+  }
+
+}
+
+.panelWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  bottom: 0;
+}
+
+.overlay {
+  background-color:#666;
+  opacity: 0;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

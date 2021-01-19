@@ -1,0 +1,29 @@
+$duration: 300ms;
+$display: flex;
+
+.enter{
+  display: $display!important;
+  transform: translate(-100%, 0);
+}
+.enterActive{
+  transform: translate(0, 0);
+  transition: transform $duration ease-in-out;
+}
+.enterDone{
+  display: $display!important;
+}
+
+
+.exit{
+  display: $display!important;
+  transform: translate(0, 0);
+}
+
+.exitActive{
+  transform: translate(-100%, 0);
+  transition: transform $duration ease-in-out;
+
+}
+.exitDone{
+  display: none!important;
+}

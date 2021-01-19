@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profilers",
+  "info": {
+    "name": "profiler"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "timestamp": {
+      "type": "datetime"
+    },
+    "data": {
+      "type": "json"
+    },
+    "total": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/stored-schemas",
+      "handler": "stored-schema.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/stored-schemas/count",
+      "handler": "stored-schema.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/stored-schemas/:id",
+      "handler": "stored-schema.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/stored-schemas",
+      "handler": "stored-schema.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/stored-schemas/:id",
+      "handler": "stored-schema.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/stored-schemas/:id",
+      "handler": "stored-schema.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

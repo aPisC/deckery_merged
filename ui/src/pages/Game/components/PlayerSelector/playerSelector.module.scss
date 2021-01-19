@@ -1,0 +1,122 @@
+$z-index: 140;
+$size: 3em;
+
+.playersIcon {
+  margin-top: .5em;
+  margin-right: .5em;
+  width: 2em;
+  height: 2em;
+  background-size: 2em;
+  z-index: $z-index;
+  top: .5em;
+  right: .5em;
+  touch-action: none;
+  background-color: var(--color-fore);
+  border-radius: 50%;
+  color: var(--color-base);
+  font-size: $size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: $z-index;
+  cursor: pointer;
+  &:hover{
+    color: var(--color-hover);
+  }
+}
+.closeIcon {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background-size: 2em;
+  z-index: $z-index;
+  bottom: .5em;
+  right: .5em;
+  touch-action: none;
+  background-color: var(--color-fore);
+  border-radius: 50%;
+  color: var(--color-base);
+  font-size: $size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  &:hover{
+    color: var(--color-hover);
+  }
+}
+
+.playersOverlay {
+  background-color: transparent;
+  opacity: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  bottom: 0;
+  right: 0;
+  z-index: $z-index;
+}
+
+.playersOverlayBackground {
+  background-color: #888;
+  opacity: 0.6;
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  bottom: 0;
+  right: 0;
+  z-index: $z-index;
+}
+
+.playerArea {
+  
+  width: 70vmin;
+  height: 70vmin;
+  max-width: 50vw;
+  max-height: 50vw;
+  position: absolute;
+  margin: auto;
+  z-index: $z-index;
+}
+
+.playerIcon {
+  font-size: 3em;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;;
+  background-color: red;
+  position: absolute;
+  display: block;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: $z-index;
+  touch-action: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-base);
+
+  .playerNameTag{
+    position:absolute;
+    background-color: var(--color-base);
+    color: var(--color-opposite);
+    padding-left: .5em;
+    padding-right: .5em;
+    font-size: .35em;
+    top: 100%;
+    border-radius: .5em;
+    min-width: 100%;
+    text-align: center;
+  }
+  &:hover{
+    color: var(--color-hover);
+    .playerNameTag{
+      background-color: var(--color-hover);
+    }
+  }
+}

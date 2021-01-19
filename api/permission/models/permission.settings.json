@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "permission",
+  "info": {
+    "name": "Permission"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "game": {
+      "via": "permissions",
+      "model": "game"
+    },
+    "card": {
+      "model": "cards"
+    },
+    "container": {
+      "model": "container"
+    },
+    "container2": {
+      "model": "container"
+    },
+    "deck": {
+      "model": "deck"
+    },
+    "player": {
+      "model": "player"
+    },
+    "permission": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "GRANT",
+        "REVOKE",
+        "INTERACTION"
+      ]
+    },
+    "priority": {
+      "type": "integer"
+    },
+    "isBasePerm": {
+      "type": "boolean"
+    }
+  }
+}

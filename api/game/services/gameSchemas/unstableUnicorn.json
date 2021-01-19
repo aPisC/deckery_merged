@@ -1,0 +1,185 @@
+{
+  "gameComtainers": [
+    {
+      "name": "Unicorn Pile",
+      "tag": "pile",
+      "type": "pile",
+      "settings": [
+        {
+          "__component": "container.grid-position",
+          "row": 1,
+          "column": 1,
+          "width": 1,
+          "height": 1
+        }
+      ],
+      "permissions": [
+        {
+          "permission": "PUSH_CARD",
+          "status": "REVOKE",
+          "deck": 0
+        }
+      ]
+    },
+    {
+      "name": "Unicorn Discard",
+      "type": "pile",
+      "tag": "discard",
+      "settings": [
+        {
+          "__component": "container.grid-position",
+          "row": 1,
+          "column": 2,
+          "width": 1,
+          "height": 1
+        }
+      ],
+      "permissions": [
+        {
+          "permission": "SEE_CARD",
+          "status": "GRANT"
+        },
+        {
+          "permission": "PUSH_CARD",
+          "status": "REVOKE",
+          "deck": 0
+        }
+      ]
+    },
+    {
+      "name": "Baby Unicorns",
+      "type": "pile",
+      "tag": "baby",
+      "settings": [
+        {
+          "__component": "container.grid-position",
+          "row": 1,
+          "column": 3,
+          "width": 1,
+          "height": 1
+        }
+      ]
+    }
+  ],
+  "playerContainers": [
+    {
+      "name": "Hand",
+      "type": "hand",
+      "tag": "hand",
+      "permissions": [
+        {
+          "permission": "SEE_CARD",
+          "status": "GRANT",
+          "self": true
+        }
+      ]
+    },
+    {
+      "name": "Table",
+      "type": "hand",
+      "tag": "table",
+      "permissions": [
+        {
+          "permission": "SEE_CARD",
+          "status": "GRANT"
+        }
+      ]
+    }
+  ],
+  "decks": [
+    {
+      "name": "Baby Unicorns",
+      "background": "http://unstablegameswiki.com/images/thumb/2/29/UU-Back-Baby-Rules.png/424px-UU-Back-Baby-Rules.png",
+      "container": 2,
+      "cards": [{ "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/babynarwhal.jpg" },
+      { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/babyblack.jpg" },
+      { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/babyblue.jpg" },
+      { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/babybrown.jpg" },
+      { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/babydeath.jpg" },
+      { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/babygreen.jpg" },
+      { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/babyorange.jpg" },
+      { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/babypink.jpg" },
+      { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/babypurple.jpg" },
+      { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/babyrainbow.jpg" },
+      { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/babywhite.jpg" },
+      { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/babyyellow.jpg" }
+      ]
+    },
+    {
+      "name": "Unicorns",
+      "background": "http://unstablegameswiki.com/images/1/1d/UU-Back-Main.png",
+      "container": 0,
+      "cards": [
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/alluring.png" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/americorn.png" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/angel.png" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/annoying.png" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/backkick.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/barbedwire.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/basicblue.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/basicgreen.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/basicindigo.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/basicnarwhal.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/basicorange.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/basicpurple.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/basicred.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/basicyellow.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/blackknight.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/blatantthievery.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/blindinglight.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/brokenstable.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/chainsaw.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/changeofluck.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/classynarwhal.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/doubledutch.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/extratail.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/extremelydestructive.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/extremelyfertile.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/ginormous.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/glitterbomb.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/glittertornado.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/gooddeal.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/greedyflying.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/llamacorn.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/magicalflying.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/magicalkittencorn.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/majesticflying.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/mermaid.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/mysticalvortex.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/nannycam.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/narwhaltorpedo.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/neigh.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/pandamonium.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/puppicorn.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/queenbee.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/rainbowaura.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/rainbowmane.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/rainbow.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/retarget.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/resetbutton.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/rhinocorn.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/sadisticritual.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/seductive.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/shabby.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/shakeup.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/sharkwithahorn.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/slowdown.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/stabby.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/summoningritual.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/control_chaos/UU-ChCo-001.png" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/swiftflying.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/targeteddestruction.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/thegreatnarwhal.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/tinystable.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/twoforone.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/unfairbargain.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/unicornlasso.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/unicornonthecob.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/unicornpoison.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/unicornshrinkray.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/unicornswap.jpg" },
+        { "name": "", "count": 1, "background": "https://www.unicornsdatabase.com/images/cards/base/yay.jpg" }
+      ]
+    }
+  ]
+}

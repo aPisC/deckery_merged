@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "components_deck_template_upload_cards",
+  "info": {
+    "name": "UploadCard",
+    "icon": "border-style"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "background": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "count": {
+      "type": "integer",
+      "default": 1,
+      "required": true,
+      "min": 1
+    },
+    "border": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "container",
+  "info": {
+    "name": "Container"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "player": {
+      "model": "player"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "deck",
+        "pile",
+        "hand"
+      ]
+    },
+    "cards": {
+      "via": "container",
+      "collection": "cards"
+    },
+    "game": {
+      "model": "game",
+      "via": "containers"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "actions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "actions.container-action"
+    },
+    "settings": {
+      "type": "dynamiczone",
+      "components": [
+        "container.pile-icons",
+        "container.grid-position",
+        "container.multidrag"
+      ]
+    }
+  }
+}

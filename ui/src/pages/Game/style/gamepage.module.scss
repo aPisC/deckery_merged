@@ -1,0 +1,35 @@
+@import '../../../style/vars.scss';
+
+.hfade{
+    mask-image: linear-gradient(to right, transparent, black 3em, black calc(100% - 3em), transparent);
+}
+
+.bfade{
+    mask-image: linear-gradient(to top, transparent, black 3em, );
+}
+.fill {
+    position: relative;
+    height: 100%; 
+    width: 100%;
+}
+
+.hwrap{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+}
+.vwrap{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+.wrapfill {
+    flex: 1;
+    overflow: auto;
+}

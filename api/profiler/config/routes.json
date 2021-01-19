@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/profilers",
+      "handler": "profiler.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/profilers/count",
+      "handler": "profiler.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/profilers/:id",
+      "handler": "profiler.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/profilers",
+      "handler": "profiler.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/profilers/:id",
+      "handler": "profiler.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/profilers/:id",
+      "handler": "profiler.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

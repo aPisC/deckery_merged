@@ -1,0 +1,47 @@
+{
+  "name": "deckery",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "concurrently -n \"strapi,ui    \" --kill-others \"cross-env REACT_PORT=3000 strapi develop\" \"npm run ui:start\" ",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "ui:start": "cd ui; npm run start"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@apisc/imcache": "^1.0.9",
+    "concurrently": "^5.3.0",
+    "cross-env": "^7.0.3",
+    "knex": "<0.20.0",
+    "mysql": "^2.18.1",
+    "socket.io": "^3.1.0",
+    "sqlite3": "latest",
+    "strapi": "3.4.3",
+    "strapi-admin": "3.4.3",
+    "strapi-connector-bookshelf": "3.4.3",
+    "strapi-plugin-content-manager": "3.4.3",
+    "strapi-plugin-content-type-builder": "3.4.3",
+    "strapi-plugin-email": "3.4.3",
+    "strapi-plugin-serve-ui": "^1.0.1",
+    "strapi-plugin-upload": "3.4.3",
+    "strapi-plugin-users-permissions": "3.4.3",
+    "strapi-utils": "3.4.3"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "d83e4f2a-9be3-4997-8f9a-84abe66d8441"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "workspaces": [
+    "ui"
+  ]
+}

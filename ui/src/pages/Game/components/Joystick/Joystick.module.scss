@@ -1,0 +1,27 @@
+$z-index: 130;
+$size: 6em;
+
+.joystick {
+  position: relative;
+  width: $size;
+  height: $size;
+  background-size: $size;
+  z-index: $z-index;
+  margin-bottom: 1.5em;
+  margin-right: 1.5em;
+  touch-action: none;
+}
+
+.joystickInner {
+  display: none;
+  position: absolute;
+  width: $size/3;
+  height: $size/3;
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba($color: gray, $alpha: 1);
+  z-index: $z-index;
+}

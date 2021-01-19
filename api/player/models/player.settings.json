@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "players",
+  "info": {
+    "name": "Player"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "game": {
+      "via": "players",
+      "model": "game"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "color": {
+      "type": "string"
+    }
+  }
+}

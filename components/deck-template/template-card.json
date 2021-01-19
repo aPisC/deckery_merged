@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_deck_template_template_cards",
+  "info": {
+    "name": "TemplateCard",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "template": {
+      "type": "json"
+    },
+    "identifier": {
+      "type": "string"
+    }
+  }
+}

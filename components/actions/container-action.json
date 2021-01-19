@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "components_actions_container_actions",
+  "info": {
+    "name": "ContainerAction",
+    "icon": "wave-square"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "context",
+        "dropcontext",
+        "click",
+        "doubleclick"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "code": {
+      "type": "text"
+    },
+    "filter": {
+      "type": "string"
+    }
+  }
+}

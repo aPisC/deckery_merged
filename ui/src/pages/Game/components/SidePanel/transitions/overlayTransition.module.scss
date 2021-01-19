@@ -1,0 +1,31 @@
+$duration: 300ms;
+$display: block;
+$opacity: 0.6;
+
+.enter{
+  display: $display!important;
+  opacity: 0!important;
+}
+.enterActive{
+  opacity: $opacity!important;
+  transition: opacity $duration ease-in-out;
+}
+.enterDone{
+  opacity: $opacity!important;
+  display: $display!important;
+}
+
+
+.exit{
+  display: $display!important;
+  opacity: $opacity!important;
+}
+
+.exitActive{
+  opacity: 0!important;
+  transition: opacity $duration ease-in-out;
+}
+.exitDone{
+  opacity: 0!important;
+  display: none!important;
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/deck-templates",
+      "handler": "deck-template.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/deck-templates/count",
+      "handler": "deck-template.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/deck-templates/:id",
+      "handler": "deck-template.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/deck-templates",
+      "handler": "deck-template.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/deck-templates/:id",
+      "handler": "deck-template.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/deck-templates/:id",
+      "handler": "deck-template.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

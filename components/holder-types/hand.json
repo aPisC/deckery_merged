@@ -1,0 +1,15 @@
+{
+  "connection": "default",
+  "collectionName": "components_holder_types_hands",
+  "info": {
+    "name": "playerHand",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

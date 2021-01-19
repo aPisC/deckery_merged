@@ -1,0 +1,36 @@
+$z-index: 120;
+
+.boardLayer{
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex: 1 1;
+  z-index: $z-index;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+
+}
+
+
+.boardInner{
+  display: block;
+  overflow: visible;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.boardArea{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}

@@ -1,0 +1,78 @@
+{
+  "extends": ["eslint:recommended", "react-app", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "switch-colon-spacing": "error",
+    "arrow-spacing": "error",
+    "no-duplicate-imports": "error",
+    "no-var": "error",
+    "prefer-template": "error",
+    "prefer-const": "error",
+    "template-curly-spacing": "error",
+    "linebreak-style": ["error", "unix"],
+    "keyword-spacing": [
+      "error",
+      {
+        "after": true
+      }
+    ],
+    "dot-location": ["error", "property"],
+    "no-alert": "error",
+    "yoda": [
+      "error",
+      "never",
+      {
+        "exceptRange": true
+      }
+    ],
+    "no-else-return": "error",
+    "no-multi-spaces": "error",
+    "no-throw-literal": "error",
+    "prefer-promise-reject-errors": "error",
+    "block-spacing": "error",
+    "comma-spacing": "error",
+    "comma-style": "error",
+    "computed-property-spacing": "error",
+    "func-call-spacing": "error",
+    "max-len": [
+      "error",
+      {
+        "code": 100,
+        "ignoreComments": true,
+        "ignoreStrings": true
+      }
+    ],
+    "no-trailing-spaces": "error",
+    "no-whitespace-before-property": "error",
+    "semi": "error",
+    "semi-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "padded-blocks": ["warn", "never"],
+    "semi-style": "warn",
+    "space-before-blocks": "warn",
+    "space-in-parens": ["warn", "never"],
+    "space-infix-ops": "warn",
+    "space-unary-ops": "warn",
+    "spaced-comment": [
+      "warn",
+      "always",
+      {
+        "exceptions": ["-", "+", "*"]
+      }
+    ],
+    "camelcase": "warn",
+    "no-empty-pattern": "warn",
+    "newline-per-chained-call": [
+      "off",
+      {
+        "ignoreChainWithDepth": 2
+      }
+    ]
+  }
+}

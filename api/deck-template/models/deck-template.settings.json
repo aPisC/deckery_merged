@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "deck_templates",
+  "info": {
+    "name": "DeckTemplate"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "cards": {
+      "type": "dynamiczone",
+      "components": [
+        "deck-template.link-card",
+        "deck-template.upload-card",
+        "deck-template.render-card"
+      ]
+    },
+    "background": {
+      "type": "dynamiczone",
+      "components": [
+        "deck-template.link-card",
+        "deck-template.upload-card",
+        "deck-template.render-card"
+      ],
+      "required": true,
+      "min": 1,
+      "max": 1
+    },
+    "templates": {
+      "type": "dynamiczone",
+      "components": [
+        "deck-template.render-card"
+      ]
+    }
+  }
+}

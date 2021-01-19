@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "caches",
+  "info": {
+    "name": "cache"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string",
+      "unique": true
+    },
+    "data": {
+      "type": "json"
+    }
+  }
+}

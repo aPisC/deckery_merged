@@ -1,0 +1,17 @@
+{
+  "connection": "default",
+  "collectionName": "components_game_game_areas",
+  "info": {
+    "name": "GameArea",
+    "icon": "columns"
+  },
+  "options": {},
+  "attributes": {
+    "gridWith": {
+      "type": "integer"
+    },
+    "gridHeight": {
+      "type": "integer"
+    }
+  }
+}

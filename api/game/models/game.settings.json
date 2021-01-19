@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "games",
+  "info": {
+    "name": "Game"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "gameSchema": {
+      "type": "json",
+      "private": true
+    },
+    "decks": {
+      "via": "game",
+      "collection": "deck"
+    },
+    "owner": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "players": {
+      "collection": "player",
+      "via": "game"
+    },
+    "containers": {
+      "via": "game",
+      "collection": "container"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "INITIALIZING",
+        "LOBBY",
+        "STARTING",
+        "RUNNING",
+        "FINISHED"
+      ]
+    },
+    "permissions": {
+      "collection": "permission",
+      "via": "game"
+    },
+    "cards": {
+      "via": "game",
+      "collection": "cards"
+    },
+    "name": {
+      "type": "string"
+    },
+    "ownerName": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "components_container_pile_icons",
+  "info": {
+    "name": "PileIcons",
+    "icon": "chess-pawn"
+  },
+  "options": {},
+  "attributes": {
+    "hoverIcon": {
+      "type": "string"
+    },
+    "dropIcon": {
+      "type": "string"
+    },
+    "emptyIcon": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "components_container_grid_positions",
+  "info": {
+    "name": "GridPosition",
+    "icon": "arrows-alt"
+  },
+  "options": {},
+  "attributes": {
+    "column": {
+      "type": "integer",
+      "default": 1,
+      "min": 1,
+      "required": true
+    },
+    "row": {
+      "type": "integer",
+      "default": 1,
+      "min": 1,
+      "required": true
+    },
+    "width": {
+      "type": "integer",
+      "default": 1,
+      "min": 1,
+      "required": true
+    },
+    "height": {
+      "type": "integer",
+      "default": 1,
+      "min": 1,
+      "required": true
+    },
+    "optionsOnRight": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    },
+    "floatRight": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
